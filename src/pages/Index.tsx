@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Logo from '@/components/Logo';
 import ComingSoon from '@/components/ComingSoon';
 import AnimatedBackground from '@/components/AnimatedBackground';
-import TechAnimation from '@/components/TechAnimation';
 import { ChevronDown } from 'lucide-react';
 
 const Index = () => {
@@ -31,7 +30,6 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-background to-background/70 overflow-hidden relative">
       <AnimatedBackground />
-      <TechAnimation />
       
       {/* Header */}
       <header className={cn(
@@ -62,7 +60,7 @@ const Index = () => {
             "text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6 opacity-0 transform translate-y-4 transition-all duration-1000 delay-500",
             loaded && "opacity-100 translate-y-0"
           )}>
-            <span className="font-modern text-balance">Jottave</span>
+            <span className="text-balance">Jottave</span>
           </h1>
           
           <div className={cn(
@@ -73,7 +71,7 @@ const Index = () => {
           </div>
           
           <p className={cn(
-            "text-muted-foreground text-lg md:text-xl mb-16 max-w-2xl opacity-0 transform translate-y-4 transition-all duration-1000 delay-900",
+            "text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl opacity-0 transform translate-y-4 transition-all duration-1000 delay-900",
             loaded && "opacity-100 translate-y-0"
           )}>
             Criando soluções elegantes para problemas complexos. 
@@ -81,6 +79,17 @@ const Index = () => {
               Aguarde novidades em breve.
             </span>
           </p>
+          
+          <div className={cn(
+            "flex flex-wrap justify-center gap-4 md:gap-6 mb-16 opacity-0 transform translate-y-4 transition-all duration-1000 delay-1100",
+            loaded && "opacity-100 translate-y-0"
+          )}>
+            {['React', 'TypeScript', 'Node.js', 'UI/UX', 'AWS'].map((skill) => (
+              <div key={skill} className="glass-card py-2 px-4 text-sm md:text-base">
+                {skill}
+              </div>
+            ))}
+          </div>
         </div>
         
         <div className={cn(
