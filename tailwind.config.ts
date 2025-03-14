@@ -21,7 +21,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				mono: ['SF Mono', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
-				cursive: ['Pacifico', 'cursive'],
+				modern: ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
