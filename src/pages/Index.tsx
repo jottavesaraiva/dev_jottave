@@ -71,7 +71,7 @@ const Index = () => {
           </div>
           
           <p className={cn(
-            "text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl opacity-0 transform translate-y-4 transition-all duration-1000 delay-900",
+            "text-muted-foreground text-lg md:text-xl mb-16 max-w-2xl opacity-0 transform translate-y-4 transition-all duration-1000 delay-900",
             loaded && "opacity-100 translate-y-0"
           )}>
             Criando soluções elegantes para problemas complexos. 
@@ -79,17 +79,6 @@ const Index = () => {
               Aguarde novidades em breve.
             </span>
           </p>
-          
-          <div className={cn(
-            "flex flex-wrap justify-center gap-4 md:gap-6 mb-16 opacity-0 transform translate-y-4 transition-all duration-1000 delay-1100",
-            loaded && "opacity-100 translate-y-0"
-          )}>
-            {['React', 'TypeScript', 'Node.js', 'UI/UX', 'AWS'].map((skill) => (
-              <div key={skill} className="glass-card py-2 px-4 text-sm md:text-base">
-                {skill}
-              </div>
-            ))}
-          </div>
         </div>
         
         <div className={cn(
