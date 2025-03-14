@@ -60,7 +60,7 @@ const Index = () => {
             "text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6 opacity-0 transform translate-y-4 transition-all duration-1000 delay-500",
             loaded && "opacity-100 translate-y-0"
           )}>
-            <span className="text-balance">Jottave</span>
+            <span className="font-cursive text-balance">Jottave</span>
           </h1>
           
           <div className={cn(
