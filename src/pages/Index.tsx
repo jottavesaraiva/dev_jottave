@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Logo from '@/components/Logo';
 import ComingSoon from '@/components/ComingSoon';
 import AnimatedBackground from '@/components/AnimatedBackground';
+import TechAnimation from '@/components/TechAnimation';
 import { ChevronDown } from 'lucide-react';
 
 const Index = () => {
@@ -30,6 +31,7 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-background to-background/70 overflow-hidden relative">
       <AnimatedBackground />
+      <TechAnimation />
       
       {/* Header */}
       <header className={cn(
